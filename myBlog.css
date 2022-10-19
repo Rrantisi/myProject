@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    background: url('img-white.jpg');
+    background-size: cover;
+    color: rgb(71, 60, 118);
+    font-family: helvetica;
+    max-width: none;
+}
+
+a {
+    color: rgb(237, 235, 246);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+a:hover {
+    background-color: rgb(237, 235, 246);
+    color: rgb(71, 60, 118);
+    padding: 10px 10px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family:'Monoton', cursive; 
+}
+
+h2 {
+    border: 3px solid;
+    box-shadow: 5px 5px;
+    padding: 10px 10px;
+}
+
+h2 ~ p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+img {
+    margin: 40px 0px 0px 0px;
+    border: 10px double rgb(5, 61, 96);
+    border-radius: 50%;
+    max-width: 40%;
+    max-height: auto;
+}
+ul {
+    padding: 10px;
+    background: rgb(195, 159, 190);
+}
+li {
+    display: inline;
+    padding: 0px 10px;
+}
+article {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.textual {
+    border: 1px;
+    padding: 10px;
+}
+
+.textual:hover {
+    box-shadow: 5px 0px 25px rgb(53, 61, 127);
+}
+
+button.like {
+    color:rgb(179, 14, 179);
+    font-weight: 900;
+}
+
+.quote {
+    font-size: smaller;
+    font-style: italic;
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+        padding: 5px;
+    }
+    li {
+        padding: 5px;
+        display: block;
+    }
+}
+
+footer {
+    font-size: 12px;
+}
