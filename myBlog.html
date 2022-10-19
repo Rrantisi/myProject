@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Reham's Blog</title>
+        <meta name="description" content="A blog about Reham's background, skills, hobbies and favorite quotes">
+        <meta name="author" content="Reham's blog"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    
+        <link href="/normalize.css" rel="stylesheet">
+        <style>
+            body {
+                text-align: center;
+                background: url('img-white.jpg');
+                background-size: cover;
+                color: rgb(71, 60, 118);
+                font-family: helvetica;
+                max-width: none;
+            }
+
+            a {
+                color: rgb(237, 235, 246);
+                text-decoration: none;
+                font-weight: 900;
+            }
+
+            a:hover {
+                background-color: rgb(237, 235, 246);
+                color: rgb(71, 60, 118);
+                padding: 10px 10px;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-family:'Monoton', cursive; 
+            }
+
+            h2 {
+                border: 3px solid;
+                box-shadow: 5px 5px;
+                padding: 10px 10px;
+            }
+
+            h2 ~ p {
+                line-height: 25px;
+                text-align: justify;
+            }
+
+            img {
+                margin: 40px 0px 0px 0px;
+                border: 10px double rgb(5, 61, 96);
+                border-radius: 50%;
+                max-width: 40%;
+                max-height: auto;
+            }
+            ul {
+                padding: 10px;
+                background: rgb(195, 159, 190);
+            }
+            li {
+                display: inline;
+                padding: 0px 10px;
+            }
+            article {
+                max-width: 500px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+            .textual {
+                border: 1px;
+                padding: 10px;
+            }
+            
+            .textual:hover {
+                box-shadow: 5px 0px 25px rgb(53, 61, 127);
+            }
+
+            button.like {
+                color:rgb(179, 14, 179);
+                font-weight: 900;
+            }
+
+            .quote {
+                font-size: smaller;
+                font-style: italic;
+            }
+            @media (max-width: 500px) {
+                h1 {
+                    font-size: 36px;
+                    padding: 5px;
+                }
+                li {
+                    padding: 5px;
+                    display: block;
+                }
+            }
+
+            footer {
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="portrait.png">
+            <h1>Reham's Blog</h1>
+            <button id="clicks" class="clicks">0</button><span class="clicks">&#128077</span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href='#aboutMe'>About me</a></li>
+                <li><a href='#hobbies'>My Hobbies</a></li>
+                <li><a href='#quotes'>Favorite Quotes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article id="aboutMe">
+                <h2>About Me!</h2>
+                <p class="textual">I'm Reham, a stay-at-home mom who is passionate about coding.<br />My journey started 7 months ago when I decided to start learning something I love while managing my house.<br />I dedicated a full time self-learning schedule to start learning the basics.<br />In those 7 months, I've been able to learn <b>SQL, R, Python, JavaScript, HTML, CSS</b> and <b>Git</b> along with other non-coding technical skills like <b>Advanced Excel and Google Sheets</b>.<br /> Although I used to love my previous jobs in the banking sector, I've always felt that this was not where I belong.<br />My passion for computer and technology drove me all the way to this path and I'm really excited for the next step of my journey!</p>
+                <button type="button" class="like" onclick="likeCount()">Like <span>&#128077</span></button>
+            </article>
+            <article id="hobbies">
+                <h2>My Hobbies</h2>
+                <p class="textual">Coding, Coding, and Coding. I really love coding that I spend every minute in my spare time to learn more and develop my skills even further. I know I am still in the beginning, and this journey requires more time and more practice...<br />Well, that even makes me happier and yet more excited! </p>
+                <button type="button" class="like" onclick="likeCount()">Like <span>&#128077</span></button>
+            </article>
+            <article id="quotes">
+                <h2>Favorite Quotes</h2>
+                <p class="textual">"The greatest glory in living lies not in never falling, but in rising every time we fall."<span class="quote">-Nelson Mandela</span><br />"Spread love everywhere you go. Let no one ever come to you without leaving happier."<span class="quote">-Mother Teresa</span><br />"The future belongs to those who believe in the beauty of their dreams."<span class="quote">-Eleanor Roosevelt</span><br />"The only impossible journey is the one you never begin." <span class="quote">-Tony Robbins</span>
+                </p>
+                <button type="button" class="like" onclick="likeCount()">Like <span>&#128077</span></button>
+            </article>
+        </main>
+        <footer>
+            <p>2022 Copyright Reham's Blog</p>
+        </footer>
+        <script type="text/javascript">
+            var clicks=0;
+            function likeCount() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+    </body>
+</html>
